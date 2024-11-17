@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import NftCard from "./NftCard";
 import fetchData from "../utils/fetch";
-import back from "../assets/icons/back.svg"
-import forward from "../assets/icons/forward.svg"
+import back from "../assets/icons/back.svg";
+import forward from "../assets/icons/forward.svg";
 
 const Slider = ({ url, start, end }) => {
   const [nfts, setNfts] = useState([]);
@@ -32,13 +32,21 @@ const Slider = ({ url, start, end }) => {
         minimumTouchDrag={20}
         pauseOnHover
         responsive={{
-          desktop: {
+          larger: {
             breakpoint: {
               max: 3000,
-              min: 1024,
+              min: 1260,
             },
             items: 4,
-            partialVisibilityGutter: 20,
+            partialVisibilityGutter: 30,
+          },
+          desktop: {
+            breakpoint: {
+              max: 1260,
+              min: 1024,
+            },
+            items: 3,
+            partialVisibilityGutter: 30,
           },
           mobile: {
             breakpoint: {
