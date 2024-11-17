@@ -35,14 +35,14 @@ const Slider = ({ url, start, end }) => {
           larger: {
             breakpoint: {
               max: 3000,
-              min: 1260,
+              min: 1600,
             },
             items: 4,
             partialVisibilityGutter: 30,
           },
           desktop: {
             breakpoint: {
-              max: 1260,
+              max: 1600,
               min: 1024,
             },
             items: 3,
